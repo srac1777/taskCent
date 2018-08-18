@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Route, Redirect, Switch, Link, HashRouter } from 'react-router-dom';
-
+import  Home  from './Home/home'
 // import { AuthRoute, ProtectedRoute } from '../util/route_util';
 // import NavBarContainer from './nav_bar/nav_bar_container';
 // import SignupFormContainer from './session_form/signup_form_container';
@@ -13,6 +13,7 @@ import { Route, Redirect, Switch, Link, HashRouter } from 'react-router-dom';
 // import ProjectIndexContainer from './projects/projects_index_container';
 const App = () => (
   <div className="everything">
+    <Home/>
     {/* <Switch>
       <AuthRoute exact path="/signup" component={SignupinNavBarContainer} />
       <AuthRoute exact path="/signin" component={SignupinNavBarContainer} />
@@ -25,7 +26,6 @@ const App = () => (
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
       <Route path="/" component={ProjectIndexContainer} />
     </Switch> */}
-    hi
   </div>
 );
 
