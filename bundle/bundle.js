@@ -273,6 +273,146 @@ exports.default = Home;
 
 /***/ }),
 
+/***/ "./Frontend/components/Index/index.jsx":
+/*!*********************************************!*\
+  !*** ./Frontend/components/Index/index.jsx ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Index = function (_React$Component) {
+  _inherits(Index, _React$Component);
+
+  function Index(props) {
+    _classCallCheck(this, Index);
+
+    var _this = _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).call(this, props));
+
+    _this.state = {};
+    _this.assignedTasks = [{ imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }];
+
+    _this.userTasks = [{ imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }];
+    return _this;
+  }
+
+  _createClass(Index, [{
+    key: 'handleSubmit',
+    value: function handleSubmit(e) {
+      e.preventDefault;
+    }
+  }, {
+    key: 'handleAssignedTaskShow',
+    value: function handleAssignedTaskShow(e) {
+      e.preventDefault;
+      //open show model
+    }
+  }, {
+    key: 'userTaskShow',
+    value: function userTaskShow(e) {
+      e.preventDefault;
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      //user the picture index to show  
+      return _react2.default.createElement(
+        'div',
+        { className: 'index-page' },
+        _react2.default.createElement(
+          'div',
+          { className: 'projects-title-div' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'main-headers' },
+            'Assigned Tasks'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'projects-index-container' },
+          this.assignedTasks.map(function (assignedTask) {
+            return _react2.default.createElement(
+              'div',
+              { className: 'project-cover-container' },
+              _react2.default.createElement(
+                'button',
+                { className: 'project-cover-container', onClick: _this2.handleAssignedTaskShow.bind(_this2) },
+                ' ',
+                _react2.default.createElement('img', { className: 'project-cover-picture', src: '' + assignedTask.imageUrl, alt: '' })
+              )
+            );
+          })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'projects-title-div' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'main-headers' },
+            'User Tasks'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'projects-index-container' },
+          this.userTasks.map(function (userTask) {
+            return _react2.default.createElement(
+              'div',
+              { className: 'project-cover-container' },
+              _react2.default.createElement(
+                'button',
+                { className: 'project-cover-container', onClick: _this2.userTaskShow.bind(_this2) },
+                ' ',
+                _react2.default.createElement('img', { className: 'project-cover-picture', src: '' + userTask.imageUrl, alt: '' })
+              )
+            );
+          })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'footer-create-button-container' },
+          _react2.default.createElement(
+            'button',
+            { className: 'create-project-button', onClick: this.handleSubmit.bind(this) },
+            'CREATE YOUR TASK'
+          )
+        )
+      );
+    }
+  }]);
+
+  return Index;
+}(_react2.default.Component);
+
+exports.default = Index;
+
+/***/ }),
+
 /***/ "./Frontend/components/app.jsx":
 /*!*************************************!*\
   !*** ./Frontend/components/app.jsx ***!
@@ -299,6 +439,10 @@ var _home = __webpack_require__(/*! ./Home/home */ "./Frontend/components/Home/h
 
 var _home2 = _interopRequireDefault(_home);
 
+var _index = __webpack_require__(/*! ./Index/index */ "./Frontend/components/Index/index.jsx");
+
+var _index2 = _interopRequireDefault(_index);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import { AuthRoute, ProtectedRoute } from '../util/route_util';
@@ -314,7 +458,8 @@ var App = function App() {
   return _react2.default.createElement(
     'div',
     { className: 'everything' },
-    _react2.default.createElement(_home2.default, null)
+    _react2.default.createElement(_home2.default, null),
+    _react2.default.createElement(_index2.default, null)
   );
 };
 
