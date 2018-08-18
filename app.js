@@ -1,6 +1,8 @@
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+const nCentSDK = require('ncent-sdk-public');
+
 
 const app = express();
 app.use(logger('dev'));
