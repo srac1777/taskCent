@@ -543,7 +543,7 @@ var Index = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'project-cover-container' },
-            _react2.default.createElement('button', { className: 'create-task-button', onClick: this.handleSubmit.bind(this) })
+            _react2.default.createElement(_reactRouterDom.Link, { className: 'create-task-button', to: '/createtask' })
           )
         ),
         _react2.default.createElement(

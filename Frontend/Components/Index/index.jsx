@@ -57,7 +57,7 @@ export default class Index extends React.Component {
             )
           })}
           <div className='project-cover-container'>
-            <Link className="create-task-button" to={ } />
+            <Link className="create-task-button" to="/createtask" />
           </div>
         </div>
         <div className='projects-title-div'>
