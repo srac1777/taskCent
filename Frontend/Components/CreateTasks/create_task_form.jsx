@@ -87,18 +87,20 @@ class Form extends React.Component {
             //         </form>
             //     </div>
             // </div>
-            <div>
+            <div className="form-full">
                 <div className="create-task">Create new task</div>
                 <div className="cp-form"></div>
                      <form>
-                        <div><input className="form-np"
+                        <div><input className="form-np1"
                             type="text"
                             // onChange={this.handletitle.bind(this)}
                             // autoFocus
                             value=''
                             placeholder="Enter Title"
                         />
-                        <input className="form-np"
+                        </div>
+                        <div>
+                        <input className="form-np2"
                             type="text"
                             // onChange={this.handletitle.bind(this)}
                             // autoFocus
@@ -108,7 +110,7 @@ class Form extends React.Component {
                         </div>
                         <div className="cp-buttons">
                             {/* <div className="cancel-cp"><button className="create-np-button2" onClick={this.props.closeModal}>CANCEL</button></div> */}
-                            <div><input type="submit" className="create-np-button" value="CREATE" /></div>
+                            <div><input type="submit" className="create-np-button"  />Create</div>
                         </div>
                     </form>
                 </div>
