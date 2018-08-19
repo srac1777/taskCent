@@ -110,7 +110,7 @@ class Form extends React.Component {
                         </div>
                         <div className="cp-buttons">
                             {/* <div className="cancel-cp"><button className="create-np-button2" onClick={this.props.closeModal}>CANCEL</button></div> */}
-                            <div><input type="submit" className="create-np-button"  />Create</div>
+                            <div><input type="submit" className="create-np-button"  value="Create"/></div>
                         </div>
                     </form>
                 </div>
