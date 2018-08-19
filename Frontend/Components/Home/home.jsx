@@ -16,13 +16,16 @@ export default class Home extends React.Component {
           <div className='splash-background' >
             <div className='homepage-title-text-container'>
               <div className='homepage-title-text'>TaskCent</div>
-              <div className='homepage-title-subtext'> Get paid to do work.</div>
-              <div className='homepage-title-subtext'> Get paid to refer.</div>
-              <div className='homepage-title-subtext'> Or both.</div>
-              <div className='homepage-title-subtext'> 
-                <Link className='get-started-button' to="/index">Get Started</Link>
-              
+              <div className="splash-divider"></div>
+              <div className='right-splash-text'>
+                  <div className='homepage-title-subtext'> Get paid to do work.</div>
+                  <div className='homepage-title-subtext'> Get paid to refer.</div>
+                  <div className='homepage-title-subtext'> Or both.</div>
               </div>
+              
+            </div>
+            <div className='homepage-title-subtext2'>
+              <Link className='get-started-button' to="/index">Get Started</Link>
             </div>
           </div>
         </div>
