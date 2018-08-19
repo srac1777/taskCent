@@ -1,0 +1,362 @@
+  html,
+  body,
+  header,
+  nav,
+  h1,
+  a,
+  ul,
+  li,
+  strong,
+  main,
+  button,
+  i,
+  section,
+  img,
+  div,
+  h2,
+  p,
+  form,
+  fieldset,
+  label,
+  input,
+  textarea,
+  span,
+  article,
+  footer,
+  time,
+  small {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    box-sizing: inherit;
+    background: transparent;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  input[type="password"],
+  input[type="email"],
+  input[type="text"],
+  input[type="submit"],
+  textarea,
+  button {
+    /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  button,
+  input[type="submit"] {
+    cursor: pointer;
+  }
+
+
+
+
+/*    ************************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-page {
+  background: rgb(238, 238, 238);
+  font-family: 'Catamaran', sans-serif;
+}
+
+.splash-zone {
+  
+}
+
+.splash-background {
+  background: url("../../Assets/splash.jpg");
+  background-color: rgb(90, 90, 90);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover; 
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.homepage-title-text-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-title-text {
+  color: white;
+  /* margin-top: 160px;  */
+  font-size: 48px;
+  /* letter-spacing: 2px; */
+  vertical-align: middle;
+
+}
+
+.splash-divider {
+  background: white;
+  width: 1px;
+  height: 250px;
+  margin: 0 40px;
+}
+
+.homepage-title-subtext {
+  margin-top: 5px;
+  color: #ffffffdc;
+  font-size: 32px;
+  /* font-family: cadgallerytrue; */
+}
+
+.homepage-title-subtext2 {
+  /* margin-top: 5px; */
+  color: white;
+  font-size: 18px;
+  margin-bottom: 60px;
+    /* width: 190px; */
+
+  margin-right: 70px;
+  /* font-family: cadgallerytrue; */
+}
+
+.projects-title-div {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-headers {
+  margin-top: 50px;
+  color: #0696d7;
+  font-size: 35px;
+}
+
+.projects-index-container {
+  display: flex;
+  flex: roll;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-cover-container {
+  height: 300px;
+  width: 32vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-cover-picture {
+  background: white;
+  height: 87%;
+  width: 91%;
+  object-fit: cover;
+  transition-timing-function: linear;
+  -webkit-transition: width .35s, height .35s;
+}
+
+.project-cover-picture:hover {
+  height: 95%;
+  width: 95%;
+  background-blend-mode: overlay;
+  opacity: 0.8; // object-fit: cover
+}
+
+.footer-create-button-container {
+  width: 100%;
+  height: 230px;
+  background: #0095D5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-project-button {
+  letter-spacing: 1.25px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  width: 403px;
+  height: 82px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: #0095D5;
+}
+
+.create-project-button:hover {
+  border: 2px solid white;
+}
+
+.footer-bar {
+  width: 100%;
+  height: 60px;
+  background: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fix-logo-position {
+  margin-right: 50px;
+}
+
+.get-started-button{
+  background: white;
+    padding: 10px;
+  border-radius: 30px;
+  width: 150px;
+  text-align: center;
+  color: black;
+  transition: 0.3s;
+}
+
+.get-started-button:hover{
+    transition: 0.3s;
+    transform: scale(1.015, 1.015);
+    /* background: rgb(24, 212, 95); */
+    -webkit-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-full {
+    /* background: red; */
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  font-family: 'Catamaran', sans-serif;
+  margin-bottom: 100px;
+
+}
+
+.create-task {
+  font-size: 34px;
+
+
+}
+
+.cp-form {
+  display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-np1 {
+  width: 400px;
+  height: 40px;
+  background: rgb(225, 225, 225);
+  margin: 5px;
+  padding: 5px;
+  padding-left: 20px;
+  margin-top: 30px;
+  
+}
+
+.form-np2 {
+  width: 400px;
+  height: 40px;
+  background: rgb(223, 223, 223);
+  margin: 5px;
+  padding: 5px;
+  padding-left: 20px;
+
+
+
+}
+
+.create-np-button {
+  background: rgb(56, 237, 56);
+  padding: 10px;
+  border-radius: 30px;
+  width: 150px;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+
+}
+
+.create-np-button:hover {
+  transition: 0.3s;
+    transform: scale(1.015, 1.015);
+    /* background: rgb(24, 212, 95); */
+    -webkit-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+
+}
+
+.cp-buttons {
+  /* background: red; */
+  padding: 50px 0 0 0 ;
+  display: flex;
+  justify-content: center;
+}
