@@ -1,14 +1,14 @@
 import React from 'react';
 
-class TaskForm extends React.Component {
+class Form extends React.Component {
     constructor() {
-        super(props);
+        super();
         // this.state = props.playlist;
         // this.focus = this.focus.bind(this);
-        this.state = ({
-            title: '',
-            creator_id: ''
-        })
+        // this.state = ({
+        //     title: '',
+        //     creator_id: ''
+        // })
     }
 
     // focus() {
@@ -84,7 +84,7 @@ class TaskForm extends React.Component {
             <div>
                 <div className="create-task">Create new task</div>
                 <div className="cp-form"></div>
-                     <form onSubmit={}>
+                     <form>
                         <div><input className="form-np"
                             type="text"
                             // onChange={this.handletitle.bind(this)}
@@ -110,4 +110,4 @@ class TaskForm extends React.Component {
     }
 }
 
-export default TaskForm;
+export default Form;

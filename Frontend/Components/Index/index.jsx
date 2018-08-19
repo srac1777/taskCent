@@ -57,7 +57,7 @@ export default class Index extends React.Component {
             )
           })}
           <div className='project-cover-container'>
-            <button className="create-task-button" onClick={this.handleSubmit.bind(this)  } />
+            <Link className="create-task-button" to={ } />
           </div>
         </div>
         <div className='projects-title-div'>

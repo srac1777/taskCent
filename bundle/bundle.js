@@ -173,6 +173,172 @@ exports.default = rootReducer;
 
 /***/ }),
 
+/***/ "./Frontend/components/CreateTasks/create_task_form.jsx":
+/*!**************************************************************!*\
+  !*** ./Frontend/components/CreateTasks/create_task_form.jsx ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Form = function (_React$Component) {
+    _inherits(Form, _React$Component);
+
+    function Form() {
+        _classCallCheck(this, Form);
+
+        return _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this));
+        // this.state = props.playlist;
+        // this.focus = this.focus.bind(this);
+        // this.state = ({
+        //     title: '',
+        //     creator_id: ''
+        // })
+    }
+
+    // focus() {
+    //     this.textInput.focus();
+    // }
+
+    // escFunction(event) {
+    //     if (event.keyCode === 27) {
+    //         this.props.closeModal();
+    //     }
+    // }
+
+    // componentDidMount() {
+    //     document.addEventListener("keydown", this.escFunction.bind(this), false);
+    // }
+
+    // handletitle(e) {
+    //     this.setState({ title: e.target.value })
+    // }
+
+    // renderErrors(e) {
+
+    // }
+
+    // handleSubmit(e) {
+    //     // e.preventDefault();
+    //     // debugger;
+    //     if (this.state.title === '') {
+    //         this.renderErrors(e);
+    //     } else {
+    //         this.props.createPlaylist(this.state);
+    //         this.setState({ title: '' });
+    //         this.props.closeModal();
+    //     }
+    // }
+
+    // handleEsc(e) { 
+    //     if(e.keyCode=== 27){
+    //         e.preventDefault();
+    //         // debugger;
+    //         // this.props.createPlaylist(this.state)
+    //         // this.setState({ title: '' })
+    //         this.props.closeModal();
+    //     }
+    // }
+
+
+    _createClass(Form, [{
+        key: "render",
+        value: function render() {
+            return (
+                // <div className="modal-np">
+                //     <button className="close-np">x</button>
+                //     <div className="create-playlist">Create new playlist</div>
+                //     <div className="cp-form">
+                //         <form onSubmit={this.handleSubmit.bind(this)}>
+                //             <div><input className="form-np"
+                //                 type="text"
+                //                 onChange={this.handletitle.bind(this)}
+                //                 autoFocus
+                //                 // onKeyPress={() => this.handleEsc()}
+                //                 value={this.state.title}
+                //                 // ref={(input) => { this.textInput = input; }}
+                //                 placeholder="Start Typing..."
+                //             />
+                //             </div>
+                //             <div className="cp-buttons">
+                //                 {/* <div className="cancel-cp"><button className="create-np-button2" onClick={this.props.closeModal}>CANCEL</button></div> */}
+                //                 <div><input type="submit" className="create-np-button" value="CREATE" /></div>
+                //             </div>
+                //         </form>
+                //     </div>
+                // </div>
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    _react2.default.createElement(
+                        "div",
+                        { className: "create-task" },
+                        "Create new task"
+                    ),
+                    _react2.default.createElement("div", { className: "cp-form" }),
+                    _react2.default.createElement(
+                        "form",
+                        null,
+                        _react2.default.createElement(
+                            "div",
+                            null,
+                            _react2.default.createElement("input", { className: "form-np",
+                                type: "text"
+                                // onChange={this.handletitle.bind(this)}
+                                // autoFocus
+                                , value: "",
+                                placeholder: "Enter Title"
+                            }),
+                            _react2.default.createElement("input", { className: "form-np",
+                                type: "text"
+                                // onChange={this.handletitle.bind(this)}
+                                // autoFocus
+                                , value: "",
+                                placeholder: "Enter Description"
+                            })
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "cp-buttons" },
+                            _react2.default.createElement(
+                                "div",
+                                null,
+                                _react2.default.createElement("input", { type: "submit", className: "create-np-button", value: "CREATE" })
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Form;
+}(_react2.default.Component);
+
+exports.default = Form;
+
+/***/ }),
+
 /***/ "./Frontend/components/Home/home.jsx":
 /*!*******************************************!*\
   !*** ./Frontend/components/Home/home.jsx ***!
@@ -446,6 +612,10 @@ var _index = __webpack_require__(/*! ./Index/index */ "./Frontend/components/Ind
 
 var _index2 = _interopRequireDefault(_index);
 
+var _create_task_form = __webpack_require__(/*! ./CreateTasks/create_task_form */ "./Frontend/components/CreateTasks/create_task_form.jsx");
+
+var _create_task_form2 = _interopRequireDefault(_create_task_form);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import { AuthRoute, ProtectedRoute } from '../util/route_util';
@@ -461,8 +631,13 @@ var App = function App() {
   return _react2.default.createElement(
     'div',
     { className: 'everything' },
-    _react2.default.createElement(_home2.default, null),
-    _react2.default.createElement(_index2.default, null)
+    _react2.default.createElement(
+      _reactRouterDom.Switch,
+      null,
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/index', component: _index2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/createtask', component: _create_task_form2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _home2.default })
+    )
   );
 };
 
