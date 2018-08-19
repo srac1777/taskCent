@@ -491,9 +491,9 @@ var Index = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).call(this, props));
 
     _this.state = {};
-    _this.assignedTasks = [{ imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }];
+    _this.assignedTasks = [{ imageUrl: "Frontend/Pictures/TaskPictures/download.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }];
 
-    _this.userTasks = [{ imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }];
+    _this.userTasks = [{ imageUrl: "Frontend/Pictures/TaskPictures/download.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }];
 
     _this.plusImage = "Frontend/Pictures/UI/plus.png";
     return _this;

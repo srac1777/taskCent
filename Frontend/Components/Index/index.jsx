@@ -8,14 +8,14 @@ export default class Index extends React.Component {
 
     }
     this.assignedTasks = [
-      { imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg"},
+      { imageUrl: "Frontend/Pictures/TaskPictures/download.jpg"},
       { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg"},
       { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg"},
       { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg"}
     ]
 
     this.userTasks = [
-      { imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg" },
+      { imageUrl: "Frontend/Pictures/TaskPictures/download.jpg" },
       { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" },
       { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" },
       { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }
