@@ -9,6 +9,12 @@ class Form extends React.Component {
         //     title: '',
         //     creator_id: ''
         // })
+
+        this.addTasks = [
+            { imageUrl: "Frontend/Pictures/AddProjects/carwash.jpg" },
+            { imageUrl: "Frontend/Pictures/AddProjects/lawnCare.jpeg" },
+            { imageUrl: "Frontend/Pictures/AddProjects/window.jpg" },
+        ]
     }
 
     // focus() {
@@ -104,7 +110,7 @@ class Form extends React.Component {
                         </div>
                         <div className="cp-buttons">
                             {/* <div className="cancel-cp"><button className="create-np-button2" onClick={this.props.closeModal}>CANCEL</button></div> */}
-                            <div><input type="submit" className="create-np-button"  />Create</div>
+                            <div><input type="submit" className="create-np-button"  value="Create"/></div>
                         </div>
                     </form>
                 </div>
