@@ -9,6 +9,12 @@ class Form extends React.Component {
         //     title: '',
         //     creator_id: ''
         // })
+
+        this.addTasks = [
+            { imageUrl: "Frontend/Pictures/AddProjects/carwash.jpg" },
+            { imageUrl: "Frontend/Pictures/AddProjects/lawnCare.jpeg" },
+            { imageUrl: "Frontend/Pictures/AddProjects/window.jpg" },
+        ]
     }
 
     // focus() {
