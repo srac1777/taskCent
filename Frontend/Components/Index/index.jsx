@@ -45,7 +45,7 @@ export default class Index extends React.Component {
     return (
       <div className='index-page'>
         <div className='projects-title-div'>
-          <h1 className="main-headers">Assigned Tasks</h1>
+          <h1 className="main-headers">Tasks Assigned To You</h1>
         </div>
         <div className='projects-index-container'>
           {/* {this.props.assignedTasks.map((assignedTask) => { */}
