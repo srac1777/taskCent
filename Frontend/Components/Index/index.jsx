@@ -7,50 +7,38 @@ export default class Index extends React.Component {
     this.state = {
 
     }
+    this.assignedTasks = [
+      { imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg"},
+      { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg"},
+      { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg"},
+      { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg"}
+    ]
+
+    this.userTasks = [
+      { imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg" },
+      { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" },
+      { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" },
+      { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }
+    ]
+
+    this.plusImage = "Frontend/Pictures/UI/plus.png"
   }
-  // componentWillReceiveProps() {
-  //   if (typeof this.state.pictures === null){
-  //     this.state.picures
-  //   }
-  // }
-
-  // componentDidMount() {
-  //   this.props.fetchAssignedTasks(); // 
-  //   this.props.fetchUserTasks();
-  //   this.props.fetchTaskReferrals();
-  //   this.props.fetchProjectAssignments();
-  // }
-
-  // projectOwnerName() {
-  //   return (
-  //     <div className='project-owner-text'>{this.props.projectOwner.first_name} {this.props.projectOwner.last_name}</div>
-  //   )
-  // }
-
-  // showPicture() {
-  //   return (
-  //     <img className='show-picture' src={`${this.props.pictures[this.state.showPictureIndex].img_url}`} />
-  //   )
-  // }
 
 
   handleSubmit(e) {
     e.preventDefault;
 
-
-    // this.props.history.push(`/projects/new`)
-
   }
 
+  handleAssignedTaskShow(e){
+    e.preventDefault
+    //open show model
+  }
 
+  userTaskShow(e){
+    e.preventDefault
+  }
 
-
-  // thumbSelect(e) {
-  //   e.preventDefault;
-  //   this.setState({
-  //     showPictureIndex: i
-  //   })
-  // }
 
   render() {
     //user the picture index to show  
@@ -60,29 +48,29 @@ export default class Index extends React.Component {
           <h1 className="main-headers">Assigned Tasks</h1>
         </div>
         <div className='projects-index-container'>
-          {this.props.assignedTasks.map((assignedTask) => {
+          {/* {this.props.assignedTasks.map((assignedTask) => { */}
+          {this.assignedTasks.map((assignedTask) => {
             return (
               <div className='project-cover-container'>
-                <Link className='project-cover-container' to={`/projects/${project.id}`}><img className='project-cover-picture' src={`${project.imageUrl}`} alt="" /></Link>
+                <button className='project-cover-container' onClick={this.handleAssignedTaskShow.bind(this)}> <img className='project-cover-picture' src={`${assignedTask.imageUrl}`} alt="" /></button>
               </div>
             )
           })}
+          <div className='project-cover-container'>
+            <button className="create-task-button" onClick={this.handleSubmit.bind(this)  } />
+          </div>
         </div>
-        <div className='User-tasks'>
+        <div className='projects-title-div'>
           <h1 className="main-headers">User Tasks</h1>
         </div>
         <div className='projects-index-container'>
-          {this.props.projects.map((project) => {
+          {this.userTasks.map((userTask) => {
             return (
               <div className='project-cover-container'>
-                <Link className='project-cover-container' to={`/projects/${project.id}`}><img className='project-cover-picture' src={`${project.imageUrl}`} alt="" /></Link>
+                <button className='project-cover-container' onClick={this.userTaskShow.bind(this)}> <img className='project-cover-picture' src={`${userTask.imageUrl}`} alt="" /></button>
               </div>
             )
           })}
-        </div>
-
-        <div className='footer-create-button-container'>
-          <button className="create-project-button" onClick={this.handleSubmit.bind(this)}>CREATE YOUR PROJECT</button>
         </div>
       </div>
     )
