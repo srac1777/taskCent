@@ -20,6 +20,8 @@ export default class Index extends React.Component {
       { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" },
       { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }
     ]
+
+    this.plusImage = "Frontend/Pictures/UI/plus.png"
   }
 
 
@@ -54,6 +56,9 @@ export default class Index extends React.Component {
               </div>
             )
           })}
+          <div className='project-cover-container'>
+            <button className="create-task-button" onClick={this.handleSubmit.bind(this)  } />
+          </div>
         </div>
         <div className='projects-title-div'>
           <h1 className="main-headers">User Tasks</h1>
@@ -66,10 +71,6 @@ export default class Index extends React.Component {
               </div>
             )
           })}
-        </div>
-
-        <div className='footer-create-button-container'>
-          <button className="create-project-button" onClick={this.handleSubmit.bind(this)}>CREATE YOUR TASK</button>
         </div>
       </div>
     )

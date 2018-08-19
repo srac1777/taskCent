@@ -315,6 +315,8 @@ var Index = function (_React$Component) {
     _this.assignedTasks = [{ imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }];
 
     _this.userTasks = [{ imageUrl: "Frontend/Pictures/TaskPictures/fix-and-flip-a-house.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/makewall.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/mechanic2.jpg" }, { imageUrl: "Frontend/Pictures/TaskPictures/Remodeling.jpg" }];
+
+    _this.plusImage = "Frontend/Pictures/UI/plus.png";
     return _this;
   }
 
@@ -366,7 +368,12 @@ var Index = function (_React$Component) {
                 _react2.default.createElement('img', { className: 'project-cover-picture', src: '' + assignedTask.imageUrl, alt: '' })
               )
             );
-          })
+          }),
+          _react2.default.createElement(
+            'div',
+            { className: 'project-cover-container' },
+            _react2.default.createElement('button', { className: 'create-task-button', onClick: this.handleSubmit.bind(this) })
+          )
         ),
         _react2.default.createElement(
           'div',
@@ -392,15 +399,6 @@ var Index = function (_React$Component) {
               )
             );
           })
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'footer-create-button-container' },
-          _react2.default.createElement(
-            'button',
-            { className: 'create-project-button', onClick: this.handleSubmit.bind(this) },
-            'CREATE YOUR TASK'
-          )
         )
       );
     }
