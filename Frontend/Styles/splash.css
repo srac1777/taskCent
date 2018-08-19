@@ -246,21 +246,117 @@
 }
 
 .get-started-button{
-    background: white;
-    border-radius: 15px;
-    color:black;
+  background: white;
     padding: 10px;
-    margin-bottom: 70px;
-    width: 50px;
+  border-radius: 30px;
+  width: 150px;
+  text-align: center;
+  color: black;
+  transition: 0.3s;
 }
 
 .get-started-button:hover{
-    background: white;
-    border-radius: 15px;
-    color:black;
-    padding: 12px;
-    margin-bottom: 70px;
-    width: 50px;
-    transition: 0.5s;
+    transition: 0.3s;
+    transform: scale(1.015, 1.015);
+    /* background: rgb(24, 212, 95); */
+    -webkit-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-full {
+    /* background: red; */
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  font-family: 'Catamaran', sans-serif;
+  margin-bottom: 100px;
+
+}
+
+.create-task {
+  font-size: 34px;
+
+
+}
+
+.cp-form {
+  display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-np1 {
+  width: 400px;
+  height: 40px;
+  background: rgb(225, 225, 225);
+  margin: 5px;
+  padding: 5px;
+  padding-left: 20px;
+  margin-top: 30px;
+  
+}
+
+.form-np2 {
+  width: 400px;
+  height: 40px;
+  background: rgb(223, 223, 223);
+  margin: 5px;
+  padding: 5px;
+  padding-left: 20px;
+
+
+
+}
+
+.create-np-button {
+  background: rgb(56, 237, 56);
+  padding: 10px;
+  border-radius: 30px;
+  width: 150px;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+
+}
+
+.create-np-button:hover {
+  transition: 0.3s;
+    transform: scale(1.015, 1.015);
+    /* background: rgb(24, 212, 95); */
+    -webkit-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 14px 77px -4px rgba(0,0,0,0.75);
+
+}
+
+.cp-buttons {
+  /* background: red; */
+  padding: 50px 0 0 0 ;
+  display: flex;
+  justify-content: center;
+}
